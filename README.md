@@ -24,7 +24,7 @@ Clone the repository. Be sure to run 'npm install' before using the generator..
 To use, run 'node app.js' in your terminal and follow the prompts.
 
 ## Made with
-
+JavaScript
 
 ## Contributions
 For contibutions, create an issue in the repo.
