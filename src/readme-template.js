@@ -37,8 +37,8 @@ ${contribution}.
 ${tests}.
 
 ## Questions
-If you have any questions you can reach me here:
-Github: [${username}](https://github.com/${username})
+If you have any questions you can reach me here:  
+Github: [${username}](https://github.com/${username})  
 Email: [${email}](mailto:${email})
 ${renderLicenseText(license, title)}
 `
