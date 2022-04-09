@@ -17,7 +17,7 @@ A high-quality, professional README generator that uses inquirer and Node.js to 
 - [Questions](#questions)
 
 ## Installation
-Clone the repository. Be sure to run 'npm install' before using the generator..
+Clone the repository. Be sure to run 'npm install' before using the generator.
 
 ## Usage
 To use, run 'node app.js' in your terminal and follow the prompts.
