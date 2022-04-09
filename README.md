@@ -11,7 +11,6 @@ A high-quality, professional README generator that uses inquirer and Node.js to 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Made with](#madewith)
 - [Lisence](#lisence)
 - [Contributions](#contributions)
 - [Tests](#tests)
