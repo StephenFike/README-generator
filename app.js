@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const generateReadme = require('./src/readme-template');
+const {generateMarkdown, renderLicenseText, renderLicenseBadge} = require('./src/readme-template');
 const fs = require('fs');
 
 const promptUser = () => {
@@ -83,10 +83,24 @@ const promptUser = () => {
             }
         },
         {
+            type: 'checkbox',
+            name: 'madewith',
+            message: 'What languages was the project made with?',
+            choices: ['HTML', 'CSS', 'JavaScript'],
+            validate: madewithInput => {
+                if(madewithInput){
+                    return true;
+                } else {
+                    console.log('Please enter the languages used for the project!')
+                    return false;
+                }
+            }
+        },
+        {
             type: 'list',
             name: 'license',
             message: 'Please select the license you are using.',
-            choices: ['Apache', 'MIT', 'GPL v3'],
+            choices: ['Apache 2.0', 'MIT', 'GPL v3'],
             validate: licenseInput => {
                 if(licenseInput){
                     return true;
@@ -127,7 +141,7 @@ const promptUser = () => {
 
 promptUser()
     .then(projectData => {
-        const readme = generateReadme(projectData);
+        const readme = generateMarkdown(projectData);
 
         fs.writeFile('./result/README.md', readme, err => {
             if(err) throw err;
