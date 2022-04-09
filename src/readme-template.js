@@ -1,5 +1,4 @@
 let generateMarkdown = templateData => {
-    console.log(templateData);
 
     const {title, description, install, usage, contribution, tests, username, email, license, madewith} = templateData
 
@@ -15,8 +14,7 @@ ${description}.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Made with](#madewith)
-- [Lisence](#lisence)
+- [License](#license)
 - [Contributions](#contributions)
 - [Tests](#tests)
 - [Questions](#questions)

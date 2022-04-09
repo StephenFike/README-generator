@@ -25,7 +25,7 @@ const promptUser = () => {
                 if(descInput){
                     return true;
                 } else {
-                    console.log('Please enter your projects descriptio!')
+                    console.log('Please enter your projects description!')
                     return false;
                 }
             }
