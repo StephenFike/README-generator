@@ -108,6 +108,19 @@ const promptUser = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your email',
+            validate: emailInput => {
+                if(emailInput){
+                    return true;
+                } else {
+                    console.log('Please enter you email!')
+                    return false;
+                }
+            }
         }
     ]);
 };
@@ -116,9 +129,9 @@ promptUser()
     .then(projectData => {
         const readme = generateReadme(projectData);
 
-        fs.writeFile('./README.md', readme, err => {
+        fs.writeFile('./result/README.md', readme, err => {
             if(err) throw err;
 
-            console.log('README complete! Check out README.md to see the output!');
+            console.log('README complete! Check out README.md in the result folder to see the output!');
         });
     });

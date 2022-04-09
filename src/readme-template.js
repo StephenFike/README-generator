@@ -1,14 +1,14 @@
 module.exports = templateData => {
     console.log(templateData);
 
-    const {title, description, install, usage, contribution, tests} = templateData
+    const {title, description, install, usage, contribution, tests, username, email, license} = templateData
 
 return `
 # ${title}
 
 ## Description
 
-${description}
+${description}.
 
 ## Table of Contents
 
@@ -20,21 +20,22 @@ ${description}
 - [Questions](#questions)
 
 ## Installation
-${install}
+${install}.
 
 ## Usage
-${usage}
+${usage}.
 
 ## License
-${lisence}
+This project is covered under the ${license} license.
 
 ## Contributions
-${contribution}
+${contribution}.
 
 ## Tests
-${tests}
+${tests}.
 
 ## Questions
 If you have any questions you can reach me here:
-Github: `
+Github: [${username}](https://github.com/${username})
+Email: [${email}](mailto:${email})`
 };
