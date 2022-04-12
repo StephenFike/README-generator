@@ -5,7 +5,8 @@
 
 ## Description
 
-A high-quality, professional README generator that uses inquirer and Node.js to create a README file.
+A high-quality, professional README generator that uses inquirer and Node.js to create a README file.  
+Click [Here](https://drive.google.com/file/d/1jzAXxWu4qB9yB0kP9VwnTVv278Jh2Uj5/view) for a video walkthrough!
 
 ## Table of Contents
 
